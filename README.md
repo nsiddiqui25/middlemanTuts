@@ -22,6 +22,13 @@ notes on Middleman static site generator
         - allows us to embed Ruby code inside our HTML and markdown files
         - we can create files without .erb extension, but won't be able to use Ruby code/logic in those files
 
+### Creating and Organizing Content
+   - `activate :livereload` in config.rb
+   - `gem 'middleman-livereload'` in Gemfile
+      - will automatically reload server everytime a change is made to the project
+   - finally, `sudo bundle install` in terminal
+      - make sure we're in the current directory so that live-reload is included in the project
+
 ### Frontmatter in Middleman
    - information we can store about the content pages on our site, like title, layout, author, language it's written in, etc.
    - for each page on the site, we can have different information about it, then we can access those variables and use them inside our middleman pages/layouts 
