@@ -1,5 +1,7 @@
 ---
 title: Welcome to Middleman
+author: "Nabeel"
+job: "Developer"
 ---
 
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 340" class="middleman-logo" aria-labelledby="middleman-logo__title" role="img">
@@ -15,6 +17,17 @@ title: Welcome to Middleman
 <h1>
   Middleman is Running
 </h1>
+
+<!--
+# <%= current_page.data.title %>
+# <br>
+# <%= current_page.data.author %>
+# <br>
+# <%= current_page.data.job %>
+# <hr>
+  # this syntax will grab data from our frontmatter and display it on the page
+  # a better place to use this, would be in our layout
+-->
 
 <%= link_to(
   "Read Documentation",

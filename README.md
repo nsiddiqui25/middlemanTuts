@@ -37,7 +37,15 @@ notes on Middleman static site generator
          - simple to use and not as syntax-heavy
          - we can access the title of the current page we're on, as stated below
          `<%= current_page.data.title %>`
+         - synatx for YAML is as follows:
+            `---`
+            `title: New Title`
+            `---`
       2) JSON - JavaScript Object notation
+         - syntax for JSON is as follows:
+            `;;;`
+            `"title": "New Title"`
+            `'''`
       - both of these are interchangable
    - we can access these frontmatter variables on any page that has embedded Ruby, then we can use <%= %> tags and access the information on those embedded Ruby pages
    - the best place to access them would be inside our templates/layouts 
