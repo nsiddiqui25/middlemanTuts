@@ -53,6 +53,8 @@ notes on Middleman static site generator
 ### Helper Methods in Middleman
    - snippets of code you can add to your HTML/markdown file that simplify some common HTML tasks
       - for example, in a md file we don't want to include any ugly/messy HTML; when writing an HTML file, we may not want to go through the trouble of creating links, forms, etc
+      - syntax for a helper-method is as follows:
+         `<%= [help_method goes here] %>`
 
 ### Layouts in Middleman
    - special HTML files (high-level templates) that are used as templates for all the other HTML files on our websites
