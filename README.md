@@ -27,7 +27,7 @@ notes on Middleman static site generator
    - `gem 'middleman-livereload'` in Gemfile
       - will automatically reload server everytime a change is made to the project
    - finally, `sudo bundle install` in terminal
-      - make sure we're in the current directory so that live-reload is included in the project
+      - make sure we're in the current directory so that live-reload is included in the project.
 
 ### Frontmatter in Middleman
    - information we can store about the content pages on our site, like title, layout, author, language it's written in, etc.
