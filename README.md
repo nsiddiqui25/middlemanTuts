@@ -58,11 +58,11 @@ notes on Middleman static site generator
 
 ### Layouts in Middleman
    - special HTML files (high-level templates) that are used as templates for all the other HTML files on our websites
-   - useful if we want all our sites to look the same, but on the content to look different 
+   - useful if we want all our sites to look the same, but the content to look different 
    - layout.erb is the default layout that comes with middleman
       - it's an HTML skeleton and in the body we have a special `<%= yield %>` tag
          - this tag becomes the placeholder for all the code in the HTML file that we're currently browsing
-      - we can create new layouts to be used with other HTML files but they need to be specified in front-matter using YAML
+      - we can create new layouts to be used with other HTML files but they need to be specified in frontmatter using YAML
    - instead of manually specifying which layout to use in front-matter, there's a more powerful/efficient way of doing it through `config.rb`, in one place where all layouts are specified
    - we can also nest templates
 
