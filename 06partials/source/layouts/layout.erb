@@ -11,6 +11,8 @@
     <%= javascript_include_tag "site" %>
   </head>
   <body>
+    <%= partial 'partials/header' %>
+    <%= partial(:'partials/subheader', :locals => { :title => 'This is the SUBHEADER passed in a variable', :color => "blue"}) %>
     <%= yield %>
   </body>
 </html>
