@@ -11,6 +11,12 @@
     <%= javascript_include_tag "site" %>
   </head>
   <body>
+    <%= data.test.dog %>
+    <hr>
     <%= yield %>
+    <hr>
+    <% data.test.products.each do |f| %>
+      <li><%= f %></li>
+    <% end %>
   </body>
 </html>

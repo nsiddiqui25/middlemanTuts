@@ -1,0 +1,7 @@
+dog: "English Bulldog"
+cat: "Scottish Fold"
+
+products:
+  - Dog Food
+  - Cat Litter
+  - Leash
