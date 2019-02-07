@@ -99,3 +99,5 @@ notes on Middleman static site generator
       `gem install middleman-blog`
    - now to create a blog (project), type the following command in the terminal
       `middleman init myBlog --template=blog`
+   - to add a new article/blog, type the following command in the terminal
+      `middleman article articleName`
