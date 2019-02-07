@@ -93,3 +93,9 @@ notes on Middleman static site generator
    `<% sitemap.resources.each do |f| %>`
    `<% end %>`
       - what's happening here, is we're looping through all the resources on our site
+
+### Building a blog in middleman
+   - By default middleman doesn't assume we want a specific template. If we want to, we need to first install the blog gem to our machine by typing the following command in the terminal
+      `gem install middleman-blog`
+   - now to create a blog (project), type the following command in the terminal
+      `middleman init myBlog --template=blog`
