@@ -72,3 +72,10 @@ notes on Middleman static site generator
    - naming convention
       - _partial.erb
       - the underscore in front of the file name is how middleman knows this is a partial
+
+### Data Files
+   - inside the data folder, we can store all sorts and types of data, like JSON and YAML
+   - when we want to change the data, we can access the files in that folder and change it
+   - the data folder sits in the main project folder, as opposed to inside the source folder
+   - content in this data folder can be accessed through our layouts, as well as the index.html file
+   - we can also loop through the data and list them out
