@@ -79,3 +79,8 @@ notes on Middleman static site generator
    - the data folder sits in the main project folder, as opposed to inside the source folder
    - content in this data folder can be accessed through our layouts, as well as the index.html file
    - we can also loop through the data and list them out
+
+### Conditionals - If Statements
+   - conditionals, here, are a way to make our .erb files make decisions, making our layouts smarter
+   - if we have a layout in our middleman, we can use conditions (if-else statements) to help it make decisions 
+   - meaning, we can use conditionals to display a certain HTML element

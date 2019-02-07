@@ -11,6 +11,21 @@
     <%= javascript_include_tag "site" %>
   </head>
   <body>
+
+    <% if current_page.data.title == "A" and current_page.data.author %>
+      <h3>This is the A file and the author is <%= current_page.data.author %></3>
+    <% elsif current_page.data.title == "B" %>
+      <h3>This is the B file</h3>
+      <br>
+      <% if current_page.data.author%>
+        <p>The author's name is <%= current_page.data.author %></p>
+      <% else %>
+        <p>This page does not have an author</p>
+      <% end %>
+    <% else %>
+      <h3>This is not either A or B file</h3>
+    <% end %>
+
     <%= yield %>
   </body>
 </html>
