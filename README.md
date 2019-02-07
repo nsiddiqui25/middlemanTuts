@@ -84,3 +84,12 @@ notes on Middleman static site generator
    - conditionals, here, are a way to make our .erb files make decisions, making our layouts smarter
    - if we have a layout in our middleman, we can use conditions (if-else statements) to help it make decisions 
    - meaning, we can use conditionals to display a certain HTML element
+
+### Sitemap Variable
+   - sitemap variable is a variable we can use to access all the information about the pages on our website
+   - by using sitemap we can loop through all the pages on our website or we can access information about a specific page
+      - it can be used to build navigational elements, or 
+      - to learn about the actual structure and the place of the current page in our entire directory 
+   `<% sitemap.resources.each do |f| %>`
+   `<% end %>`
+      - what's happening here, is we're looping through all the resources on our site

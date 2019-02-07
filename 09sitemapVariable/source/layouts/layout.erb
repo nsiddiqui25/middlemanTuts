@@ -11,6 +11,53 @@
     <%= javascript_include_tag "site" %>
   </head>
   <body>
+    <h3>Titles of our pages</h3>
+    <% sitemap.resources.each do |f| %>
+      <%= f.data.title %>
+      <br>
+    <% end %>
+    <hr>
+    
+    <h3>Paths of our files</h3>
+    <% sitemap.resources.each do |f| %>
+      <%= f.path %>
+      <br>
+    <% end %>
+    <hr>
+    
+    <h3>Content type of our files</h3>
+    <% sitemap.resources.each do |f| %>
+      <%= f.content_type %>
+      <br>
+    <% end %>
+    <hr>
+
+    <h3>Looping only through titles of HTML files</h3>
+    <% sitemap.resources.each do |f| %>
+      <% if f.content_type == "text/html; charset=utf-8" %>
+        <%= f.data.title %> <br>
+      <% end %>
+    <% end %>
+    <hr>
+
+    <h3>Looping through HTML files and building a navigational tree</h3>
+    <% sitemap.resources.each do |f| %>
+      <% if f.content_type == "text/html; charset=utf-8" %>
+        <li><a href="<%= f.path %>"><%= f.data.title %></a></li>
+      <% end %>
+    <% end %>
+    <hr>
+
+    <h3>Accessing the parent of the current resource we're looking at on the site</h3>
+    <%= current_resource.parent %>
+
+    <h3>Accessing the sibling's page title of the current resource we're looking at on the site</h3>
+    <% current_resource.siblings.each do |f| %>
+      <%= f.data.title %><br>
+    <% end %>
+
+
+    <br>  
     <%= yield %>
   </body>
 </html>
