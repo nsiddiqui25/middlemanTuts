@@ -101,3 +101,6 @@ notes on Middleman static site generator
       `middleman init myBlog --template=blog`
    - to add a new article/blog, type the following command in the terminal
       `middleman article articleName`
+
+### Pretty HTML
+   - 
